@@ -66,6 +66,10 @@ class Database implements ConnectionInterface
         return $this->getConfig('name');
     }
 
+    public function getDatabaseName(): string {
+      return $this->db->dbname;
+    }
+
     /**
      * Begin a fluent query against a database table.
      *
@@ -469,10 +473,5 @@ class Database implements ConnectionInterface
     public function getConfig($option = null)
     {
         return Arr::get($this->config, $option);
-    }
-
-    public function getDatabaseName()
-    {
-        return $this->db->dbname;
     }
 }
