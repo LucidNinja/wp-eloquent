@@ -470,4 +470,9 @@ class Database implements ConnectionInterface
     {
         return Arr::get($this->config, $option);
     }
+
+    public function getDatabaseName()
+    {
+        return $this->db->dbname;
+    }
 }
