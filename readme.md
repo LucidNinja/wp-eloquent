@@ -171,7 +171,7 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
 
 
 ## Minimum Requirement
- - PHP 7.4+
+ - PHP 8.0.2+
  - WordPress 4.0+
 
 ## Author
